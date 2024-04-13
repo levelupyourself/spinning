@@ -15,11 +15,11 @@ const rotationValues = [
   { minDegree: 151, maxDegree: 220, value: "Amritsar" },
   { minDegree: 221, maxDegree: 290, value: "Andaman" },
   { minDegree: 291, maxDegree: 360, value: "Kashmir" },
-  //{ minDegree: 301, maxDegree: 360, value: 3 },
-  //{ minDegree: 331, maxDegree: 360, value: 2 },
+  { minDegree: 301, maxDegree: 360, value:  },
+  { minDegree: 331, maxDegree: 360, value:  },
 ];
 //Size of each piece
-const data = [20, 20, 20, 20, 20];
+const data = [20, 20, 20, 20, 20, 20, 20];
 //background color for each piece
 var pieColors = [
   "#b163da",
@@ -37,7 +37,7 @@ let myChart = new Chart(wheel, {
   type: "pie",
   data: {
     //Labels(values which are to be displayed on chart)
-    labels: ["Goa", "kashmir", "Andaman", "Amritsar", "Pondicherry"],
+    labels: ["Goa", "kashmir", "Andaman", "Amritsar", "Pondicherry", "Laksh...", "Himachal"],
     //Settings for dataset/pie
     datasets: [
       {
