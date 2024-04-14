@@ -12,7 +12,7 @@ let remainingChances = 7;
 const rotationValues = [
   { minDegree: 0, maxDegree: 40, value: "Goa" },
   { minDegree: 41, maxDegree: 100, value: "Pondicherry" },
-  { minDegree: 101, maxDegree: 140, value: "Amritsar" },
+  { minDegree: 101, maxDegree: 140, value: "PUNJAB" },
   { minDegree: 151, maxDegree: 190, value: "Andaman" },
   { minDegree: 191, maxDegree: 240, value: "Kashmir" },
   { minDegree: 241, maxDegree: 290, value: "Himachal" },
@@ -44,7 +44,7 @@ let myChart = new Chart(wheel, {
       "HIMACHAL",
       "KASHMIR",
       "ANDAMAN",
-      "AMRITSAR",
+      "PUNJAB",
     ],
     //Settings for dataset/pie
     datasets: [
