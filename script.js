@@ -68,7 +68,7 @@ let myChart = new Chart(wheel, {
       datalabels: {
         color: "#ffffff",
         formatter: (_, context) => context.chart.data.labels[context.dataIndex],
-        font: { size: 7 },
+        font: { size: 11},
       },
     },
   },
