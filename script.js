@@ -22,12 +22,12 @@ const rotationValues = [
 const data = [20, 20, 20, 20, 20, 20, 20];
 //background color for each piece
 var pieColors = [
-  "#b163da",
+ "#b163da",
   "#8b35bc",
   "#b163da",
   "#8b35bc",
-  "#8b35bc",
   "#b163da",
+  "#8b35bc",
 ];
 //Create chart
 let myChart = new Chart(wheel, {
