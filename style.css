@@ -69,7 +69,7 @@ img {
 }
 @media screen and (max-width: 768px) {
   .wrapper {
-    font-size: 12px;
+    font-size: 7px;
   }
   img {
     right: -5%;
