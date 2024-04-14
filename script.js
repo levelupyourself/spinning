@@ -10,16 +10,16 @@ let previousNums = document.querySelector(".previousNums");
 //);
 let remainingChances = 7;
 const rotationValues = [
-  { minDegree: 0, maxDegree: 70, value: "Goa" },
-  { minDegree: 71, maxDegree: 150, value: "Pondicherry" },
-  { minDegree: 151, maxDegree: 220, value: "Amritsar" },
-  { minDegree: 221, maxDegree: 290, value: "Andaman" },
-  { minDegree: 291, maxDegree: 360, value: "Kashmir" },
-  //{ minDegree: 301, maxDegree: 360, value: 3 },
-  //{ minDegree: 331, maxDegree: 360, value: 2 },
+  { minDegree: 0, maxDegree: 40, value: "Goa" },
+  { minDegree: 41, maxDegree: 100, value: "Pondicherry" },
+  { minDegree: 101, maxDegree: 140, value: "Amritsar" },
+  { minDegree: 151, maxDegree: 190, value: "Andaman" },
+  { minDegree: 191, maxDegree: 240, value: "Kashmir" },
+  { minDegree: 241, maxDegree: 290, value: "Himachal" },
+  { minDegree: 291, maxDegree: 350, value: "Lakshadweep" },
 ];
 //Size of each piece
-const data = [20, 20, 20, 20, 20];
+const data = [20, 20, 20, 20, 20, 20, 20];
 //background color for each piece
 var pieColors = [
   "#b163da",
@@ -37,7 +37,15 @@ let myChart = new Chart(wheel, {
   type: "pie",
   data: {
     //Labels(values which are to be displayed on chart)
-    labels: ["Goa", "kashmir", "Andaman", "Amritsar", "Pondicherry"],
+    labels: [
+      "PONDICHERRY",
+      "GOA",
+      "LAKSHADWEEP",
+      "HIMACHAL",
+      "KASHMIR",
+      "ANDAMAN",
+      "AMRITSAR",
+    ],
     //Settings for dataset/pie
     datasets: [
       {
@@ -96,19 +104,19 @@ spinBtn.addEventListener("click", () => {
   let randomDegree;
   //setting random
   if (remainingChances == 7) {
-    randomDegree = 140;
+    randomDegree = 70;
   } else if (remainingChances == 6) {
-    randomDegree = 280;
+    randomDegree = 30;
   } else if (remainingChances == 5) {
-    randomDegree = 140;
+    randomDegree = 70;
   } else if (remainingChances == 4) {
-    randomDegree = 60;
+    randomDegree = 170;
   } else if (remainingChances == 3) {
-    randomDegree = 60;
+    randomDegree = 220;
   } else if (remainingChances == 2) {
-    randomDegree = 140;
+    randomDegree = 70;
   } else if (remainingChances == 1) {
-    randomDegree = 350;
+    randomDegree = 270;
   }
   //Interval for rotation animation
   let rotationInterval = window.setInterval(() => {
